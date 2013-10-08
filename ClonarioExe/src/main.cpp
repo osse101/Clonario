@@ -11,9 +11,7 @@ int SDL_main(int argc, _TCHAR* argv[]){
 	if(!gr->init())
 		return -1;
 	gr->run();
-	std::cout << "Enter me: ";
-	char c;
-	std::cin >> c;
+	
 	gr->cleanup();
 	delete gr;
 

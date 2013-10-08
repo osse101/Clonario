@@ -82,10 +82,12 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="header\gamemodel.h" />
     <ClInclude Include="header\gamerunner.h" />
     <ClInclude Include="header\gamewindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\gamemodel.cpp" />
     <ClCompile Include="src\gamerunner.cpp" />
     <ClCompile Include="src\gamewindow.cpp" />
   </ItemGroup>

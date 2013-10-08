@@ -9,7 +9,7 @@ public:
 	GameWindow();
 	~GameWindow();
 	GameWindow(GameWindow* other);
-	
+	void update();
 protected:
 private:
 	SDL_Window* window;

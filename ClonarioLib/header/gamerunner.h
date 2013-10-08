@@ -5,6 +5,7 @@
 #include <iostream>
 #include <SDL.h>
 #include "gamewindow.h"
+#include "gamemodel.h"
 
 class GameRunner{
 public:
@@ -16,7 +17,10 @@ public:
 protected:
 
 private:
+	void handleEvents();
 	GameWindow* window;
+	GameModel* model;
+	bool isRunning;
 };
 
 #endif
