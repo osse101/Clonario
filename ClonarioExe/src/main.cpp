@@ -1,10 +1,10 @@
 
 #include <iostream>
+#include <tchar.h>
+#include <SDL.h>
 #include "gamerunner.h"
 
-
-int main(){
-
+int SDL_main(int argc, _TCHAR* argv[]){
 	std::cout << "Starting\n";
 
 	GameRunner* gr = new GameRunner();
@@ -20,3 +20,4 @@ int main(){
 	std::cout << "Stopping\n";
 	return 0;
 }
+

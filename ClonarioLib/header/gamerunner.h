@@ -3,6 +3,7 @@
 #define GAME_RUNNER_H
 
 #include <iostream>
+#include <SDL.h>
 
 class GameRunner{
 public:
