@@ -2,7 +2,7 @@
 #ifndef GAME_WINDOW_H
 #define GAME_WINDOW_H
 
-#include <SDL.h>
+#include "stdafx.h"
 
 class GameWindow{
 public:

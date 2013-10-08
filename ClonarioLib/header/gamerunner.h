@@ -3,7 +3,7 @@
 #define GAME_RUNNER_H
 
 #include <iostream>
-#include <SDL.h>
+#include "stdafx.h"
 #include "gamewindow.h"
 #include "gamemodel.h"
 

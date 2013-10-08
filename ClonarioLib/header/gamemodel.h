@@ -1,7 +1,7 @@
 #ifndef GAME_MODEL_H
 #define GAME_MODEL_H
 
-#include <SDL.h>
+#include "stdafx.h"
 
 class GameModel{
 public:

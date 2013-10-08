@@ -85,11 +85,14 @@
     <ClInclude Include="header\gamemodel.h" />
     <ClInclude Include="header\gamerunner.h" />
     <ClInclude Include="header\gamewindow.h" />
+    <ClInclude Include="header\resourcemanager.h" />
+    <ClInclude Include="header\stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gamemodel.cpp" />
     <ClCompile Include="src\gamerunner.cpp" />
     <ClCompile Include="src\gamewindow.cpp" />
+    <ClCompile Include="src\resourcemanager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
