@@ -18,9 +18,15 @@
     <ClInclude Include="header\gamerunner.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="header\gamewindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gamerunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gamewindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

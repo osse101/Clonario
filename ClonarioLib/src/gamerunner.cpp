@@ -11,10 +11,16 @@ GameRunner::~GameRunner(){
 }
 
 bool GameRunner::init(){
-	
+	window = new GameWindow();
 	return true;
 }
 
 void GameRunner::run(){
 	std::cout << "Game Running\n";
+	
 }
+
+void GameRunner::cleanup(){
+	delete window;
+}
+
