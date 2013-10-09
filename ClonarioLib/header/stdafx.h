@@ -6,5 +6,6 @@
 #include <SDL_audio.h>
 #include <SDL_ttf.h>
 #include <string>
+#include <iostream>
 
 #endif

@@ -4,6 +4,8 @@
 GameWindow::GameWindow(){
 	window = SDL_CreateWindow("Clonario", 200, 200, 800, 600, 0);
 	renderer = SDL_CreateRenderer(window, 0, SDL_RENDERER_ACCELERATED);
+	ResourceManager::getInstance()->registerRenderer(renderer);
+
 	SDL_SetRenderDrawColor(renderer, 255, 0, 0, SDL_ALPHA_OPAQUE);
 	SDL_RenderClear(renderer);
 	SDL_RenderPresent(renderer);
@@ -28,7 +30,13 @@ void GameWindow::update(){
 	
 	SDL_SetRenderDrawColor(renderer, 0, 255, 0, SDL_ALPHA_OPAQUE);
 	SDL_RenderFillRect(renderer, rect);
-	delete rect;
+	
 
+	SDL_Texture* playerTex = ResourceManager::getInstance()->loadImage("..\\resource\\player.png");
+	rect->w = 28; rect->h = 35;
+	SDL_RenderCopy(renderer, playerTex, NULL, rect);
+	SDL_DestroyTexture(playerTex);
+
+	delete rect;
 	SDL_RenderPresent(renderer);
 }

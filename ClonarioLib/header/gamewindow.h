@@ -3,6 +3,7 @@
 #define GAME_WINDOW_H
 
 #include "stdafx.h"
+#include "resourcemanager.h"
 
 class GameWindow{
 public:
